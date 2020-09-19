@@ -1,0 +1,10 @@
+@mixin M_Title($fz,$color,$fw) {
+    font-size: $fz;
+    color:$color;
+    font-weight: $fw;   
+}
+
+@mixin M_Paragraph($fz,$color) {
+    font-size: $fz;
+    color:$color;
+}
