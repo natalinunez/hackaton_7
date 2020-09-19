@@ -1,64 +1,23 @@
 @import '../mixins/mixins';
-/*Inicio modulo Container Main*/
-.ContainerMain{
-    width: 100%;
-    height: 5%;    
-    background-image: url('./imagenes/banner.png');
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
-    &-Title{
-        @include M_Title(30px,white,bold);
+.CPDetail{
+    &-H2{
+               /*M_Title($fz,$color,$fw) */
+        @include M_Title(15px,black,bold);    
+    }    
+    &-P1{
+               /*M_Title($fz,$color,$fw) */
+        @include M_Title(50px,black,bold);        
     }
     
-    &-P{
-        @include M_Paragraph(15px,white);
-    }    
-}
-/*Fin modulo Container Main*/
-
-/*Inicio componente Author*/
-.Author{
-    padding-bottom: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;    
-
-    &-Link{
-        width: 14%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center; 
-    }    
-    &-Name{
-               /*M_Title($fz,$color,$fw) */
-        @include M_Title(15px,black,bold);        
+    &-P2{
+            /*M_Title($fz,$color,$fw) */
+        @include M_Title(10px,blck,bold);        
     }
-    &-Date{
-               /*M_Title($fz,$color,$fw) */
-        @include M_Title(15px,black,none);        
-    }      
-}
-/*Fin componente Author*/
-/*Inicio Container List Popular*/
-.CLP{
-    &-H2{
-               /*M_Title($fz,$color,$fw)*/
-        @include M_Title(20px,black,bold);
-        padding-bottom: 30px;
-    }
-
-    &-P{
-               /*M_Paragraph($fz,$color)*/
-        @include M_Paragraph(15px,black);
+    &-P3{
+        /*M_Title($fz,$color,$fw) */
+        @include M_Title(20px,blue,bold);        
     }
 
 }
 
-/*.CLP--Size{
-    padding-top: 8px;
-    padding-bottom: 8px;    
-}*/
-/*Fin Container List Popular*/
