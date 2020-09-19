@@ -100,3 +100,51 @@
     grid-template-rows: 1fr;      
 }
 /*Fin Container We*/
+/*Inicio Container Proyect*/
+.CProyect{
+    /*background-color:pink;*/
+    text-align: center;
+    width: 80%;
+    height: 15%;    
+    margin:0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    grid-template-rows: 2fr 1fr;
+    grid-gap:15px;
+}
+
+.CPList{
+    grid-column: 1/2;
+    grid-row: 1/2;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 2fr;
+    grid-gap:40px;
+}
+.CPInfor{
+    grid-column: 2/3;
+    grid-row: 1/2;       
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 2fr;   
+    grid-gap:40px
+}
+.CPLink{
+    grid-column: 1/3;
+    grid-row: 2/3;       
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,1fr);   
+    grid-gap:10px;   
+}
+.CPLinkC{
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    grid-template-rows: 1fr;          
+}
+
+/*Fin Container Proyect*/
